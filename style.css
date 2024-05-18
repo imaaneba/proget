@@ -1,0 +1,100 @@
+   .precontener{
+
+      width: 100%;
+     height: 100%;
+   }
+   .contener{
+    
+display: flex; 
+background-color: rgb(80, 46, 117);
+        color: white;
+
+   }
+   #contener1{
+      float: right;
+  
+    display: flex;
+    justify-content: right;
+    font-size: 15px;
+    margin-left: 16%; 
+ 
+   }
+   #contener1 a{
+      color: white;
+      padding: 14px 25px;
+     border: 1px;
+       text-decoration: none;
+
+
+
+   }
+   .logo{
+      float: right;
+      padding: 10px 70px;
+   
+
+
+
+   }
+   #contener2{
+    
+      width: 100%;
+    height: 75vh;
+    background: url("images/image71.jpg");
+    background-position: center;
+    background-size: cover;
+    bottom: 88px;
+   }
+   .filtre{
+width:98.67%;
+height: 75vh;
+background: rgb(101, 45, 168);
+position: absolute;
+opacity: 0.6;
+}
+.texte{
+   color:white;
+position: relative;
+top: 69px;
+text-align: center;
+}
+.texte img{
+   padding: 1px 100px;
+
+}
+  .contener3{
+    text-align: center;
+    color: rgb(38, 18, 56);
+  } 
+  .contener4{
+display: flex;
+border: 12vh;
+
+  }
+  .image{
+    margin-left: 8%;
+    border: 4px;
+  }
+  .contener4 img{
+    width: 300px; ;
+    height:19em ;
+
+
+  }
+ 
+  .image{
+    height: 70%;
+  }
+  .prix {
+    height: 20%;
+    color: rgb(145, 87, 222);
+    font-size: 18px;
+  
+  }
+  .prix span{
+    height: 20%;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(198, 67, 67);
+    
+  }
