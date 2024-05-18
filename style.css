@@ -1,100 +1,120 @@
-   .precontener{
 
-      width: 100%;
-     height: 100%;
-   }
-   .contener{
+  /* my style  */
+
+  body {
+    background: url("https://hdqwalls.com/download/stranger-things-season-3-2019-4k-5k-38-1920x1080.jpg") center / cover no-repeat;
     
-display: flex; 
-background-color: rgb(80, 46, 117);
-        color: white;
-
-   }
-   #contener1{
-      float: right;
-  
+  margin: 0;
+  }
+   /* // header */
+  .menu-bar {
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 10vh;
     display: flex;
-    justify-content: right;
-    font-size: 15px;
-    margin-left: 16%; 
- 
-   }
-   #contener1 a{
-      color: white;
-      padding: 14px 25px;
-     border: 1px;
-       text-decoration: none;
-
-
-
-   }
-   .logo{
-      float: right;
-      padding: 10px 70px;
+    background-color: rgba(0, 0, 0, .4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    
+    align-items: center;
+    justify-content: space-between;
    
-
-
-
-   }
-   #contener2{
-    
-      width: 100%;
-    height: 75vh;
-    background: url("images/image71.jpg");
-    background-position: center;
-    background-size: cover;
-    bottom: 88px;
-   }
-   .filtre{
-width:98.67%;
-height: 75vh;
-background: rgb(101, 45, 168);
-position: absolute;
-opacity: 0.6;
-}
-.texte{
-   color:white;
-position: relative;
-top: 69px;
-text-align: center;
-}
-.texte img{
-   padding: 1px 100px;
-
-}
-  .contener3{
-    text-align: center;
-    color: rgb(38, 18, 56);
-  } 
-  .contener4{
-display: flex;
-border: 12vh;
-
+    width: 80%;
+    margin: auto;
   }
-  .image{
-    margin-left: 8%;
-    border: 4px;
+  .nav-bar{
+    display: flex;
+    width: 50%;
   }
-  .contener4 img{
-    width: 300px; ;
-    height:19em ;
-
-
-  }
- 
-  .image{
-    height: 70%;
-  }
-  .prix {
-    height: 20%;
-    color: rgb(145, 87, 222);
-    font-size: 18px;
-  
-  }
-  .prix span{
-    height: 20%;
+  .menu-bar li {
+    list-style: none;
     color: white;
-    font-size: 18px;
-    background-color: rgb(198, 67, 67);
-    
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 16px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
   }
+  .logo{
+    width: 50px;
+  }
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: .2s;
+    border-radius: 25px;
+  }
+  
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #e8edec, #d2d1d3);
+    box-shadow: 0px 3px 20px 0px black;
+    transform: scale(1.2);
+  }
+  
+  .menu-bar li:hover {
+    color: black;
+  }
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-line {
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.menu {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+
+.show-menu {
+  display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-icon {
+    display: flex;
+  }
+  .nav-bar{
+    display: none;
+  }
+  .menu ul {
+  display: block;
+ }
+}
+
+  /* end header */
